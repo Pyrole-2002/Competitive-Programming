@@ -11,10 +11,9 @@
 using namespace std;
 
 using ll = int64_t;
-#define     INF                     (int) ((1ll << 31) - 1)
-#define     REP(i, start, end)      for (ll i = start; (i) < (ll) (end); (i)++)
-#define     MOD                     (int) (1e9 + 7)
-
+#define INF (int)((1ll << 31) - 1)
+#define REP(i, start, end) for (ll i = start; (i) < (ll)(end); (i)++)
+#define MOD (int)(1e9 + 7)
 
 ll gcd(ll a, ll b)
 {
@@ -24,11 +23,18 @@ ll gcd(ll a, ll b)
     }
     return gcd(b, a % b);
 }
+
 ll mod(ll n, ll m)
 {
     return (((n % m) + m) % m);
 }
 
+void swap(ll &a, ll &b)
+{
+    ll temp = a;
+    a = b;
+    b = temp;
+}
 
 int main()
 {
