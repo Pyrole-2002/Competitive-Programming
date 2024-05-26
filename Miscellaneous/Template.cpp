@@ -15,25 +15,9 @@ using ll = int64_t;
 #define REP(i, start, end) for (ll i = start; (i) < (ll)(end); (i)++)
 #define MOD (int)(1e9 + 7)
 
-ll gcd(ll a, ll b)
-{
-    if (b == 0)
-    {
-        return a;
-    }
-    return gcd(b, a % b);
-}
-
 ll mod(ll n, ll m)
 {
     return (((n % m) + m) % m);
-}
-
-void swap(ll &a, ll &b)
-{
-    ll temp = a;
-    a = b;
-    b = temp;
 }
 
 int main()

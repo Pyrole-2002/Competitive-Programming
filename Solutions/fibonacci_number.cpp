@@ -103,20 +103,29 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    ll period = 15e12;
+	ll f;
+	cin >> f;
+	double x = log10f(sqrt(5) * f) / log10f((1 + sqrt(5)) / 2);
+	ll n = (ll)ceil(x);
 
-    ll f;
-    cin >> f;
+	if (fib(n) == f)
+	{
+		cout << n << '\n';
+	}
+	else if (fib(n + 1) == f)
+	{
+		cout << n + 1 << '\n';
+	}
+	else if (fib(n - 1) == f)
+	{
+		cout << n - 1 << '\n';
+	}
+	else
+	{
+		cout << -1 << '\n';
+	}
 
-    REP(i, 0, period)
-    {
-        if (fib(i) == f)
-        {
-            cout << i << endl;
-            return 0;
-        }
-    }
-    cout << -1 << endl;
-
-    return 0;
+	return 0;
 }
+
+// TODO: Consider modulo 1e13
