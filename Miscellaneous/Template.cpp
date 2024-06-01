@@ -1,13 +1,4 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <deque>
-#include <queue>
-#include <set>
-#include <map>
-#include <algorithm>
-#include <cmath>
-
+#include<bits/stdc++.h>
 using namespace std;
 
 using ll = int64_t;
