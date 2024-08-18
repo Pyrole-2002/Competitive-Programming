@@ -2,7 +2,8 @@
 using namespace std;
 
 using ll = int64_t;
-#define INF (int)((1ll << 31) - 1)
+#define INF INT_MAX
+#define NINF INT_MIN
 #define REP(i, start, end) for (ll i = start; (i) < (ll)(end); (i)++)
 #define MOD (int)(1e9 + 7)
 
